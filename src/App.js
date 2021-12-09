@@ -3,7 +3,7 @@ import React from 'react'
 import { Routes, Route, Link} from 'react-router-dom'
 import Home from './component/Home';
 import DndComponent from './component/Dnd/DndComponent';
-
+import CropImage from './component/crop/CropImage';
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />}/>
         <Route exact path="dnd" element={<DndComponent />} />
+        <Route exact path="crop" element={<CropImage />} />
       </Routes>
     </div>
   );
